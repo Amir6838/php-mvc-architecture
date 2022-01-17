@@ -8,7 +8,8 @@ class test
     {
         $url = $this->parseURL();
         if (file_exists('../app/controller/' . $url[0] . '.php')) {
-            echo 'FileExists' . '<br>';
+            //For Test
+            //echo 'FileExists' . '<br>';
             require_once '../app/controller/' . $url[0] . '.php';
             $this->controller = new $url[0];
             unset($url[0]);

@@ -5,6 +5,7 @@ class home extends controller{
 
     public function writename($nameModel, $fname='', $lname = ''){
         var_dump($fname);
+        //for Test
         echo $this->localModel($nameModel)->send($fname, $lname);
     }
 
@@ -17,4 +18,7 @@ class home extends controller{
         echo '<br>';
     }
 
+    public function view(){
+        $this->loadView('home', ['amir', 'khodi']);
+    }
 }

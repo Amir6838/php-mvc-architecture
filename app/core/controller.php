@@ -7,4 +7,10 @@ class controller{
             return new $name;
         }
     }
+
+    public function loadView($name, $data = []){
+        if (file_exists('../app/view/' . $name . '.php')) {
+            require_once '../app/view/' . $name . '.php';
+        }
+    }
 }
