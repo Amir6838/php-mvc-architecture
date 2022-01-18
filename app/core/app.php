@@ -1,6 +1,8 @@
 <?php
+require_once '../app/init.php';
 class test
 {
+    
     public $controller;
     public $method;
     public $parametr = [];
