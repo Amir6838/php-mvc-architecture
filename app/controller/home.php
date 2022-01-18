@@ -3,6 +3,11 @@ require_once '../app/core/controller.php';
 
 class home extends controller{
 
+    public function __construct()
+    {
+        $this->view();
+    }
+
     public function writename($nameModel, $fname='', $lname = ''){
         var_dump($fname);
         //for Test
@@ -21,4 +26,5 @@ class home extends controller{
     public function view(){
         $this->loadView('home', ['amir', 'khodi']);
     }
+
 }
