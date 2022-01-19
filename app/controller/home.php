@@ -24,7 +24,9 @@ class home extends controller{
     }
 
     public function view(){
+        $this->loadView('template/headre');
         $this->loadView('home', ['amir', 'khodi']);
+        $this->loadView('template/footer');
     }
 
 }
